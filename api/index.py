@@ -37,7 +37,7 @@ def password_strength(password):
     return strength
 
 
-@app.route('/generate_password', methods=['POST'])
+@app.route('/', methods=['POST'])
 def generate_password_endpoint():
     length = int(request.json.get('length', 12))
     include_uppercase = request.json.get('include_uppercase', True)
