@@ -55,7 +55,3 @@ def password_strength_endpoint():
 
     strength = password_strength(password)
     return jsonify({'strength': strength})
-
-
-if __name__ == '__main__':
-    app.run()
